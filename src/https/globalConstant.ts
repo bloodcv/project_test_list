@@ -1,0 +1,1 @@
+export const Limit: number = 10;
