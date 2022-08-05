@@ -1,6 +1,7 @@
 
 import { faker } from '@faker-js/faker';
 import dayjs from 'dayjs';
+import { Limit } from './globalConstant';
 
 export const ApiGetStatusOptions = (): Promise<any[]> => {
   let resArr: any[] = [];
@@ -25,7 +26,7 @@ export const ApiGetDataList = (query: ISrchData): Promise<{
   console.log('ApiGetDataList', query)
   let dataList: IListDataItem[] = [];
   let { skuCode, skuName } = query;
-  for (let index = 0; index < Number(faker.random.numeric(2)); index++) {
+  for (let index = 0; index < Limit; index++) {
     dataList.push({
       code: `${skuCode || 'none'}_${faker.name.firstName()}`,
       name: skuName as string || 'none',
