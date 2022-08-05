@@ -59,33 +59,6 @@ const handleCurrentChange = (currentPage: number) => {
       </template>
       <!-- 操作项 -->
       <slot name="actColumn" />
-      <!-- 
-      <el-table-column prop="date" label="Date" width="150">
-        <template #default="scope">
-          <slot name="date" :scope="scope"></slot>
-        </template>
-      </el-table-column>
-      <el-table-column prop="name" label="Name" width="120">
-        <template #default="scope">
-          <div style="display: flex; align-items: center">
-            <el-icon><timer /></el-icon>
-            <span style="margin-left: 10px">{{ scope.row.name }}</span>
-          </div>
-        </template>
-      </el-table-column>
-      <el-table-column prop="state" label="State" width="120" />
-      <el-table-column prop="city" label="City" width="120" />
-      <el-table-column prop="address" label="Address" width="600" />
-      <el-table-column prop="zip" label="Zip" width="120" />
-      <el-table-column fixed="right" label="Operations" width="120">
-        <template #default>
-          <el-button link type="primary" size="small" @click="handleClick"
-            >Detail</el-button
-          >
-          <el-button link type="primary" size="small">Edit</el-button>
-        </template>
-      </el-table-column>
-       -->
     </el-table>
 
     <el-pagination

@@ -59,7 +59,7 @@ const onSubmit = () => {
         </template>
         <slot name="formSlot" />
         <div class="act-btn flex-shrink" :style="'padding-left: 100px;'">
-          <el-button class="mr-1" type="primary" @click="onSubmit">Query</el-button>
+          <el-button class="mr-1" type="primary" @click="onSubmit">提交</el-button>
           <slot name="actSlot" />
         </div>
       </div>
