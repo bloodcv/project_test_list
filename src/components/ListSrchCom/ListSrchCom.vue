@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, reactive } from "vue";
+// import { onMounted, reactive } from "vue";
 interface IProps {
   srchFromConfig: ISrchFormConfig[];
 }
@@ -46,7 +46,7 @@ const onSubmit = () => {
         <template v-for="(item, index) in srchFromConfig" :key="index">
           <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5" v-if="item.type === 'Input'">
             <el-form-item :label="item.label" class="w-full">
-              <el-input v-model="formData[item.key]" v-bind="item.attrs" />
+              <el-input v-model="(formData[item.key] as string)" v-bind="item.attrs" />
             </el-form-item>
           </div>
           <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5" v-if="item.type === 'SingleSelect'">

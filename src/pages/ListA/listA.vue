@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import ListSrchCom from "@/components/ListSrchCom/ListSrchCom.vue";
-import ListCom from "@/components/ListCom/ListCom.vue";
+// import ListSrchCom from "@/components/ListSrchCom/ListSrchCom.vue";
+// import ListCom from "@/components/ListCom/ListCom.vue";
 import { Limit } from "@/https/globalConstant";
 import {
   srchFromConfig,
@@ -14,6 +14,8 @@ import {
   querySubmit,
   handleTableEdit,
 } from "./listA";
+import ListSrchCom from "@/components/ListSrchCom/ListSrchCom.vue";
+import ListCom from "@/components/ListCom/ListCom.vue";
 
 getActStatusOptions();
 </script>

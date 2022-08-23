@@ -43,7 +43,7 @@ export default defineConfig({
         }),
       ],
 
-      dts: path.resolve(path.resolve(__dirname, '.'), 'auto-imports.d.ts'),
+      dts: path.resolve(path.resolve(__dirname, 'src'), 'auto-imports.d.ts'),
     }),
     Components({
       resolvers: [
@@ -57,7 +57,8 @@ export default defineConfig({
           // directives: true,
         }),
       ],
-      dts: path.resolve(path.resolve(__dirname, '.'), 'components.d.ts'),
+      // 自定义的组件也会自动添加到这个文件中，也会自动引入
+      dts: path.resolve(path.resolve(__dirname, 'src'), 'components.d.ts'),
     }),
     Icons({
       autoInstall: true,

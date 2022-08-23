@@ -7,7 +7,7 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    Backup: typeof import('./src/components/SaleGoodsCom/backup.vue')['default']
+    Backup: typeof import('./components/SaleGoodsCom/backup.vue')['default']
     ElButton: typeof import('element-plus/es')['ElButton']
     ElCard: typeof import('element-plus/es')['ElCard']
     ElCol: typeof import('element-plus/es')['ElCol']
@@ -26,11 +26,11 @@ declare module '@vue/runtime-core' {
     ElTable: typeof import('element-plus/es')['ElTable']
     ElTableColumn: typeof import('element-plus/es')['ElTableColumn']
     ElTag: typeof import('element-plus/es')['ElTag']
-    ListCom: typeof import('./src/components/ListCom/ListCom.vue')['default']
-    ListSrchCom: typeof import('./src/components/ListSrchCom/ListSrchCom.vue')['default']
-    PriceCom: typeof import('./src/components/PriceCom/priceCom.vue')['default']
+    ListCom: typeof import('./components/ListCom/ListCom.vue')['default']
+    ListSrchCom: typeof import('./components/ListSrchCom/ListSrchCom.vue')['default']
+    PriceCom: typeof import('./components/PriceCom/priceCom.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    SaleGoodsCom: typeof import('./src/components/SaleGoodsCom/saleGoodsCom.vue')['default']
+    SaleGoodsCom: typeof import('./components/SaleGoodsCom/saleGoodsCom.vue')['default']
   }
 }
